@@ -24,7 +24,7 @@ window.wpfc.dictionary = {
 	"Browser Caching"		  :"Cache du navigateur",
 	"Enable"                  :"Activer", 
 	"New Post"                :"Nouveau message", 
-	"Clear all cache files when a post or page is published" :"Effacer tous les fichiers de cache quand un article ou une page sont publiés",
+	"Clear cache files when a post or page is published" :"Effacer les fichiers de cache quand un article ou une page sont publiés",
 	"Submit"  				  :"Soumettre",
 	"Delete Now" 			  :"Effacer maintenant",
 	"You can delete all cache files" :"Vous pouvez supprimer tous les fichiers du cache",
@@ -63,5 +63,6 @@ window.wpfc.dictionary = {
 	"Combine Css" : "Combinez Css", 
 	"*** Attention ***" : "*** Attention ***",
 	"Open .htaccess and remove this rule" : "Ouvrez le fichier .htaccess et supprimer cette règle",
+	"Remove render-blocking JavaScript" : "Supprimez les ressources JavaScript qui bloquent l'affichage",
 	"If your server does not support mod_expires.c, this option can cause the Internel Server Error (500). If you see such error please do the steps below." : "Si votre serveur ne supporte pas mod_expires.c, cette option peut provoquer l'erreur <<Internel Server Error (500)>>. Si vous voyez cette erreur, s'il vous plaît suivez les étapes ci-dessous."
 };

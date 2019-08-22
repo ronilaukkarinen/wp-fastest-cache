@@ -7,11 +7,8 @@
 		public function hook(){
 			add_action( 'wp_ajax_nopriv_wpfc_wppolls_ajax_request', array($this, "wpfc_wppolls_ajax_request"));
 			add_action( 'wp_ajax_wpfc_wppolls_ajax_request', array($this, "wpfc_wppolls_ajax_request"));
-
-		}
-
-		public function execute(){
 			add_action( 'wp_footer', array($this, "wpfc_wp_polls") );
+
 		}
 
 		public function wpfc_wp_polls() { ?>
@@ -20,13 +17,12 @@
 					var wpfcWpfcAjaxCall = function(polls){
 						if(polls.length > 0){
 							poll_id = polls.last().attr('id').match(/\d+/)[0];
-							poll_nonce = jQuery('#poll_' + poll_id + '_nonce').val();
 
 							jQuery.ajax({
 								type: 'POST', 
 								url: pollsL10n.ajax_url,
 								dataType : "json",
-								data : {"action": "wpfc_wppolls_ajax_request", "poll_id": poll_id},
+								data : {"action": "wpfc_wppolls_ajax_request", "poll_id": poll_id, "nonce" : "<?php echo wp_create_nonce('wpfcpoll'); ?>"},
 								cache: false, 
 								success: function(data){
 									if(data === true){
@@ -50,20 +46,18 @@
 			</script><?php
 		}
 
-		public function wpfc_wppolls_ajax_request() {
-			$id = strip_tags($_POST["poll_id"]);
-			//$id = mysql_real_escape_string($id);
-			$id = str_replace(array("'", '"'), "", $id);
-			$id = intval($id);
+		public function wpfc_wppolls_ajax_request(){
+			if(wp_verify_nonce(esc_attr($_POST["nonce"]), 'wpfcpoll')){
+				$result = check_voted(esc_attr($_POST["poll_id"]));
 
-			$result = check_voted($id);
-
-			if($result){
-				echo "true";
+				if($result){
+					die("true");
+				}else{
+					die("false");
+				}
 			}else{
-				echo "false";
+				die("Expired: wpfcpoll");
 			}
-			die();
 		}
 	}
 ?>

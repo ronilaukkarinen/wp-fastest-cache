@@ -19,7 +19,7 @@ window.wpfc.dictionary = {
 	"Cache System"            :  "Cache Sistemi",
 	"Enable"                  :  "Açık",
 	"New Post"                :  "Yeni Yazı",
-	"Clear all cache files when a post or page is published" :  "Yeni bir yazı veya sayfa eklenirse tüm önbelleği temizle",
+	"Clear cache files when a post or page is published" :  "Yeni bir yazı veya sayfa eklenirse önbelleği temizle",
 	"Submit"  				  :  "Gönder",
 	"Delete Now" 			  :  "Temizle Şimdi",
 	"You can delete all cache files" :  "Tüm önbelleği temizleyebilirsiniz",
@@ -64,7 +64,7 @@ window.wpfc.dictionary = {
 	"Mobile" : "Mobil",
 	"Image Optimization" : "Resim Optimizasyonu",
 	"Optimize Image Tool" : "Resim Optimizasyon Aracı",
-	"All JPEG" : "Tüm JPEG",
+	"All" : "Tüm",
 	"Pending" : "Bekleyenler",
 	"Errors" : "Hatalar",
 	"Optimized Images" : "Optimize Olanlar",
@@ -112,5 +112,13 @@ window.wpfc.dictionary = {
 	"You need to activate the premium plugin manually" : "Premium sürümünü manuel olarak aktifleştirmelisiniz",
 	"Continue" : "Devam Et",
 	"Minify Js" : "JS Küçült",
-	"You can decrease the size of js files" : "JS dosyalarının boyununu küçültebilirsiniz"
+	"You can decrease the size of js files" : "JS dosyalarının boyununu küçültebilirsiniz",
+	"Render Blocking Js" : "Oluşturma Engelleyici Js",
+	"Remove render-blocking JavaScript" : "Oluşturma engelleyici JavaScript'i kaldırın",
+	"Preload" : "Önyükleme",
+	"Create the cache of all the site automatically" : "Tüm sitenin cache'ini otomatik oluştur",
+	"CDN Settings" : "CDN Ayarları",
+	"Add New Rule" : "Yeni Kural Ekle",
+	"Timeout Rules" : "Zaman Aşımı Kuralları",
+	"Eliminate render-blocking JavaScript and CSS in above-the-fold content" : "Oluşturmayı önleyen JavaScript ve CSS kodlarını ekranın üst kısmındaki içerikten kaldırın"
 };

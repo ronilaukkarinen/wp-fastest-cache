@@ -19,7 +19,7 @@ window.wpfc.dictionary = {
     "Cache System"            :  "Cache System" ,
     "Enable"                  :  "Aktivera" ,
     "New Post"                :  "Nytt inlägg" ,
-    "Clear all cache files when a post or page is published" :  "Töm all cache när ett inlägg eller en sida publiceras" ,
+    "Clear all cache files when a post or page is published" :  "Töm cache när ett inlägg eller en sida publiceras" ,
     "Submit"                    :  "Skicka" ,
     "Delete Now"               :  "Radera nu" ,
     "You can delete all cache files" :  "Du kan radera alla cachade filer" ,
@@ -64,7 +64,7 @@ window.wpfc.dictionary = {
     "Mobile" : "Mobil" ,
     "Image Optimization" : "Bildoptimering" ,
     "Optimize Image Tool" : "Bildoptimeringsverktyg" ,
-    "All JPEG" : "All JPEG" ,
+    "All" : "All" ,
     "Pending" : "Avvaktar" ,
     "Errors" : "Fel" ,
     "Optimized Images" : "Optimerade bilder" ,
@@ -107,6 +107,7 @@ window.wpfc.dictionary = {
     "Error Occured" : "Fel uppstod",
     "/wp-content/plugins/ is not writable" : "/wp-content/plugins/ är inte skrivbar",
     "Please read the tutorial" : "Vänligen läs handledningen",
+    "Remove render-blocking JavaScript" : "Ta bort Javascript som blockerar rendering",
     "You need to activate the premium plugin manually" : "Du måste aktivera premium-tillägget manuellt",
     "Continue" : "Fortsätt"
 };

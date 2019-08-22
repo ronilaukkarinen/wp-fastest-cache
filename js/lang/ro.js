@@ -19,7 +19,7 @@ window.wpfc.dictionary = {
 	"Cache System"            :  "Sistem cache",
 	"Enable"                  :  "Activeaza",
 	"New Post"                :  "Post nou",
-	"Clear all cache files when a post or page is published" :  "Sterge tot cache-ul cand un post sau o pagina sunt publicate",
+	"Clear cache files when a post or page is published" :  "Sterge cache-ul cand un post sau o pagina sunt publicate",
 	"Submit"  				  :  "Trimite",
 	"Delete Now" 			  :  "Sterge acum",
 	"You can delete all cache files" :  "Poti goli cache-ul",
@@ -64,7 +64,7 @@ window.wpfc.dictionary = {
 	"Mobile" : "Mobil",
 	"Image Optimization" : "Optimizare imaginio",
 	"Optimize Image Tool" : "Unealta pentru otimizat imagini",
-	"All JPEG" : "Toate JPEG-urile",
+	"All" : "Toate",
 	"Pending" : "In asteptare",
 	"Errors" : "Erori",
 	"Optimized Images" : "Imagini optimizate",
@@ -109,7 +109,7 @@ window.wpfc.dictionary = {
 	"Error Occured" : "A intervenit o eroare",
 	"/wp-content/plugins/ is not writable" : "/wp-content/plugins/ nu are drepturi de scriere",
 	"Please read the tutorial" : "Va rugam sa cititi tutorial-ul",
+	"Remove render-blocking JavaScript" : "Eliminați JavaScript care blochează redarea conținutului",
 	"You need to activate the premium plugin manually" : "Trebuie sa activati versiunea premium manual",
 	"Continue" : "Continuati"
-
 };

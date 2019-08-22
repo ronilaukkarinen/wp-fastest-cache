@@ -19,7 +19,7 @@ window.wpfc.dictionary = {
     "Cache System"            :  "System buforowania" ,
     "Enable"                  :  "Włącz" ,
     "New Post"                :  "Nowy post" ,
-    "Clear all cache files when a post or page is published" :  "Wyczyść wszystkie zbuforowane pliki, gdy opublikowano nowy post lub stronę" ,
+    "Clear cache files when a post or page is published" :  "Wyczyść zbuforowane pliki, gdy opublikowano nowy post lub stronę" ,
     "Submit"                    :  "Wyślij" ,
     "Delete Now"               :  "Usuń teraz" ,
     "You can delete all cache files" :  "Możesz usunąć wszystkie pliki cache" ,
@@ -66,7 +66,7 @@ window.wpfc.dictionary = {
     "Mobile" : "Wersja mobilna" ,
     "Image Optimization" : "Optymalizacja obrazu" ,
     "Optimize Image Tool" : "Narzędzie do optymalizacji obrazu" ,
-    "All JPEG" : "Wszystkie pliki JPEG" ,
+    "All" : "Wszystkie pliki" ,
     "Pending" : "W oczekiwaniu" ,
     "Errors" : "Błędy" ,
     "Optimized Images" : "Zoptymalizowane obrazy" ,
@@ -109,6 +109,7 @@ window.wpfc.dictionary = {
     "Error Occured" : "Wystąpił błąd",
     "/wp-content/plugins/ is not writable" : "/wp-content/plugins/ nie jest edytowalny",
     "Please read the tutorial" : "Proszę przeczytać poradnik",
+    "Remove render-blocking JavaScript" : "Usuń kod JavaScript blokujący renderowanie",
     "You need to activate the premium plugin manually" : "Musisz aktywować wersję premium ręcznie",
     "Continue" : "Kontynuuj"
 };

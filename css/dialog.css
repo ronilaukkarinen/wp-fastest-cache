@@ -1,11 +1,16 @@
 button:focus {outline:0;}
-.window-content-wrapper {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgb(238,238,238)), color-stop(100%, rgb(219,219,219)));
-	background: -moz-linear-gradient(center bottom , rgb(219, 219, 219) 50%, rgb(238, 238, 238) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
-	text-shadow: 0 0 5px #fff;
-	border-bottom:1px solid #ABABAB;
-	border-top:1px solid #EEE6E6;
+.window-content-wrapper{
+    background-image:-webkit-gradient(linear, left top, left bottom, color-stop(50%, rgb(238,238,238)), color-stop(100%, rgb(219,219,219)));
+    background:-webkit-linear-gradient(center bottom, rgb(219,219,219) 50%, rgb(238,238,238) 100%);
+    background:-moz-linear-gradient(center bottom, rgb(219,219,219) 50%, rgb(238,238,238) 100%);
+    background:-o-linear-gradient(center bottom, rgb(219,219,219) 50%, rgb(238,238,238) 100%);
+    background:-ms-linear-gradient(center bottom, rgb(219,219,219) 50%, rgb(238,238,238) 100%);
+    background:linear-gradient(center bottom, rgb(219,219,219) 50%, rgb(238,238,238) 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#dbdbdb',GradientType=0 );
+    text-shadow:0 0 5px #fff;
+    border-bottom:1px solid #ABABAB;
+    border-top:1px solid #EEE6E6;
 }
+
 .wiz-inp-cont {
     background: none repeat scroll 0 0 rgba(100, 100, 100, 0.1);
     border-radius: 6px;
@@ -51,9 +56,9 @@ button:focus {outline:0;}
 .window-buttons-wrapper button {
 	margin: 0 4px;
 }
-.window-buttons-wrapper button[action="next"], .window-buttons-wrapper button[action="back"], .window-buttons-wrapper button[action="close"] {
+.wpfc-add-new-timeout-button, .wpfc-add-new-exclude-button, .window-buttons-wrapper button[action="next"], .window-buttons-wrapper button[action="back"], .window-buttons-wrapper button[action="close"] {
     background-color: gray !important;
-    background-image: url("../images/button-back-grey.png") !important;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAABaCAIAAAAU4rCTAAACGUlEQVQ4EQXBQbIkRxEFQH+V0V974Bjo/neaBTJhs6Ir4+GeX79+AQDmr7/+UxChmBawGsq0qxGqoabVVolUa7ZNW8IWpnsraAGzWwogMdsl2khTm9lb2dCqSKddVZRUze6CUIXZriJJW2T2lgLA7F4AQs3uAgBm9xIAmN1SoIrZ3ZY0oqRz74XQUMy9t1ASVfN9X5pGoDr3+5UAwLz3AgDmfS8gtGTufQEAc+9VAmjN3lsIJXTuXgIA8zwHAJDfv38DAObvv/9LRWgTnqRJVJtEdXYrTVOtaqZtahWKTtuCtonW7C6AFmZ3SdKWUNNuxQqFzr2l0UWipr0lJbFbZu8WJFqYuwsAmL1LIUqYuxfChorZvQSoYvZuCQ2VmHtX2iY0jczdCwCYe5eSKCqze0u0TRDz/X5Dk7RNtPP9vtIUoZV53y9QQpnv90XSVqQ67/s/AgDzvhdKAPO+L4FUkbn3AgBm96oKEtX8+e8/AQDzj3/9M0BJMed5QgkV6cxMCS2EOeeEhkrSdj6fIUpUMTMfACDz+flJS0rSMj8zElBSnc/PH9FCQnV+fj6gGkHn8/mAEmDOOQCAOedAIFXmnAMAmHNOKJBo55wDAJhzDkqgZJ5zoJCgc55HklbSNsmccwAAc55HtIRGzHMORKpgnnOiLY8UmfNE0yeBqnmeU6IqCSZPHtp4aBLz5EECgkyeJ4CCzHkeAMD/AViclsCJwxhXAAAAAElFTkSuQmCC') !important;
     background-repeat: repeat-x !important;
     border: 1px solid #777 !important;
     color: #000 !important;
@@ -106,7 +111,7 @@ button:focus {outline:0;}
 	background-position:0 -60px;
 }
 .close-wiz {
-    background: url("http://www.jotform.com/images/close-wiz-sprite.png") no-repeat scroll 0 0 transparent;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAmCAYAAAAm56DSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODNEQTU1N0QyNTZBMTFFMDg0MjhBMzkwREEyOUQ5ODQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODNEQTU1N0UyNTZBMTFFMDg0MjhBMzkwREEyOUQ5ODQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4M0RBNTU3QjI1NkExMUUwODQyOEEzOTBEQTI5RDk4NCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4M0RBNTU3QzI1NkExMUUwODQyOEEzOTBEQTI5RDk4NCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pg4s3CYAAAMbSURBVHjanJbLb0xxFMfvvVOjDaP1aM0U9aqohhARG41IbBoRKwsJCyspO7Eg8QewsGAhsbAikYiVjQVWXinxqCBdmFapR0v1kWI6HZ3re5LvT47jN5OZnuTTzvzu/X3vuef1mzDw2zKwA2wCa9V6H3gF7oMvshDH8d+LoRGpBYfAVvABDIHv6vpikAYt4Am4BrFpn9gicAKM0IM4KG2ybx3Fz0FwVIslwWmQBeNB5dYA1oAz4qETOwxmqhRytpCxuxLhfyOoN0Ii/Bb0q7WY32W9qNbHJERhGDYm8GEn+GFiNAB6wTeQA03gJWMpMZ3rPKJNyD01+NPMTdpWgjf8PEiBnLq+2twvnqblNac8cZBMdarvWmgvH2atUEpMYrMdLPUU8xbw3rNnKsECTJgLEr9brsqVTYJ3LFxrOfEs77kgT/5kYhioGA569uQjptZao4nRSRPDjGfPmBRtCnSAGpOAAlgA5IE97FeJ7y+GQcfttzS/64ANoNX0Xgs3DxuPkp4EZNEBvU4swewtmUU7SQ12QyyOVPs854Vq7Ct4FnOohZ7R0kpqyogU2FrZWE3HsMTNSbZZEwdmijWWZ+t9BNN20pZ6ugjtBtuYHGfS/E/BbV+tWc/qwDGwi/EbpUfOUpzIUod3wCV4lveJSSbPMhlDFYztZv4/BcERLSbz6QK9+FlFNueR4+KhK42uWQgFvF864kjAVpGqXm+EJPX3pBjNAOzm+oxalyndjrGdkcrfQ1e1PQZ31WklvXoTPOQIkkStUPeLd3VSGu2eYC9Xn3soMKHWVnnmX5u85hxPLKRP95sDw9kBsNmzpzYy7+9MSmMfx3RgPOpkT1orJljlSc9pc5n9p22c46fNIzYZlTjFpWVeq+961r1gHP+btBGDa63exOi8iaFv7g2EPJmPmlfN8EBp4MZ+eveZdZU2cZMJctEdKN2eBKRZ1O73RpbjKO1JgEzaiVCNooOeY78SkzBdhVgxUqfLjRLxK2fi7XUR8s2ziMdeh6dc/vkpAB6BB06o3NiW3tvInpzP3xzD7ME+lkbOju0/AgwAGgf5ial8jHIAAAAASUVORK5CYII=') no-repeat scroll 0 0 transparent;
     height: 19px;
     width: 22px;
     cursor: pointer;
@@ -241,7 +246,7 @@ button:focus {outline:0;}
 }
 
 .wpfc-checkbox-list label{
-    width:130px;
+    width:110px;
     display:inline-block;
     margin-top:3px;
     color:#333333;

@@ -19,7 +19,7 @@ window.wpfc.dictionary = {
     "Cache System"            :  "Cache System" ,
     "Enable"                  :  "Aktivieren" ,
     "New Post"                :  "Neuer Eintrag" ,
-    "Clear all cache files when a post or page is published" :  "Alle Cache-Dateien löschen, wenn ein neuer Eintrag oder eine neue Seite veröffentlicht wird" ,
+    "Clear cache files when a post or page is published" :  "Cache-Dateien löschen, wenn ein neuer Eintrag oder eine neue Seite veröffentlicht wird" ,
     "Submit"                    :  "Absenden" ,
     "Delete Now"               :  "Jetzt löschen" ,
     "You can delete all cache files" :  "Sie können alle Cache-Dateien löschen" ,
@@ -64,7 +64,7 @@ window.wpfc.dictionary = {
     "Mobile" : "Mobile" ,
     "Image Optimization" : "Bildoptimierung" ,
     "Optimize Image Tool" : "Image Tool optimieren" ,
-    "All JPEG" : "Alle JPEG" ,
+    "All" : "Alle" ,
     "Pending" : "Anstehend" ,
     "Errors" : "Fehler" ,
     "Optimized Images" : "Optimierte Bilder" ,
@@ -108,5 +108,11 @@ window.wpfc.dictionary = {
     "/wp-content/plugins/ is not writable" : "/wp-content/plugins/ ist nicht schreibbar",
     "Please read the tutorial" : "Lesen Sie bitte die Anleitung",
     "You need to activate the premium plugin manually" : "Sie müssen das Premium Plugin manuell aktivieren",
-    "Continue" : "Weiter"
+    "Continue" : "Weiter",
+    "Create the cache of all the site automatically" : "Das Cache der ganzen Seite automatisch bilden",
+    "Clear cache files when a post or page is updated" : "Die Cache-Dateien reinigen, wenn ein Beitrag oder eine Seite aktualisiert wird",
+    "You can decrease the size of js files" : "Sie können die Größe der js-Dateien verringern",
+    "Minify Js" : "JavaScript reduzieren",
+    "Render Blocking Js" : "Rendering Blockierer Js",
+    "Remove render-blocking JavaScript" : "Entfernen Sie JavaScript, das das Rendering blockiert"
 };
